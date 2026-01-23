@@ -94,44 +94,122 @@
 
       <div class="info-icons">
         <ul>
-          <li>
-            <a
-              href="https://github.com/1501henify"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github"></i
-            ></a>
+          <!-- GitHub -->
+          <li class="github-trigger">
+            <button class="github-btn" aria-label="GitHub profiles">
+              <i class="fab fa-github"></i>
+            </button>
           </li>
 
+          <!-- Email -->
           <li>
             <a
               href="mailto:henify.1501@gmail.com?subject=Message%20request&body=Hi%20Henry%2C%20I%20found%20you%20through%20your%20portfolio!"
               target="_blank"
               rel="noopener noreferrer"
-              ><i class="fas fa-envelope"></i
-            ></a>
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
           </li>
 
+          <!-- WhatsApp -->
           <li>
             <a
               href="https://wa.me/2348160813334"
               target="_blank"
               rel="noopener noreferrer"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
           </li>
 
-          <!-- Instagram -->
+          <!-- X (Twitter) -->
           <li>
             <a
-              href="https://www.instagram.com/ifyoke0?igsh=bGZwNzl0ajRic3hk"
+              href="https://x.com/ifyOke0"
               target="_blank"
               rel="noopener noreferrer"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <!-- Telegram -->
+          <li>
+            <a
+              href="https://t.me/HenrySells"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+
+          <!-- Discord -->
+          <li>
+            <a
+              href="https://discord.com/users/1461734797930922223"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
           </li>
         </ul>
       </div>
+
+      <div class="github-modal-overlay" id="githubModal">
+        <div class="github-modal">
+          <h3>GitHub Accounts</h3>
+
+          <a
+            href="https://github.com/1501henify"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link"
+          >
+            <i class="fab fa-github"></i>
+            <span>1501henify</span>
+          </a>
+
+          <a
+            href="https://github.com/ifyOke0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link"
+          >
+            <i class="fab fa-github"></i>
+            <span>ifyOke0</span>
+          </a>
+
+          <button class="close-modal">Close</button>
+        </div>
+      </div>
+
+      <script>
+        const githubBtn = document.querySelector(".github-btn");
+        const modal = document.getElementById("githubModal");
+        const closeBtn = modal.querySelector(".close-modal");
+
+        const openModal = () => {
+          modal.style.display = "flex";
+          document.body.style.overflow = "hidden"; // lock scroll
+        };
+
+        const closeModal = () => {
+          modal.style.display = "none";
+          document.body.style.overflow = "";
+        };
+
+        githubBtn.addEventListener("click", openModal);
+        closeBtn.addEventListener("click", closeModal);
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      </script>
     </aside>
 
     <aside class="Details">
@@ -331,7 +409,7 @@
 
         <!-- Python -->
         <a
-          href="https://github.com/1501henify/Learning-Python"
+          href="https://github.com/ifyOke0/Learning-Python"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -346,7 +424,7 @@
             <div class="content">
               <h3>
                 <a
-                  href="https://github.com/1501henify/Learning-Python"
+                  href="https://github.com/ifyOke0/Learning-Python"
                   target="_blank"
                   rel="noopener noreferrer"
                   id="pythonTitle"

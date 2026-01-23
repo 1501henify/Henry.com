@@ -8,7 +8,7 @@ const repos = [
     elementId: 'star-count-3',
   },
   {
-    username: '1501henify',
+    username: 'ifyOke0',
     repo: 'Learning-Python',
     elementId: 'star-count-4',
   },

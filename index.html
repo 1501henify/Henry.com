@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Responsive redirect logic -->
-  <script>
-    if (window.innerWidth > 1024) {
-      window.location.replace("./desktop/");
-    }
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -151,6 +144,13 @@
   </script>
 
   <head>
+    <!-- Responsive redirect logic -->
+    <script>
+      if (window.innerWidth > 1024) {
+        window.location.replace("./desktop/");
+      }
+    </script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="./assets/favicon.ico" />

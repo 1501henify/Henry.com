@@ -1,94 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Indexing -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Multilingual description -->
+  <meta
+    name="description"
+    content="Henify — Student Developer Portfolio featuring frontend projects, JavaScript animations, and Python learning with Django and Flask. | Studenten-Portfolio mit Frontend-Projekten, JavaScript-Animationen und Python-Lernprojekten."
+  />
+
+  <!-- Keywords EN + DE + personal SEO -->
+  <meta
+    name="keywords"
+    content="Henry Ifeanyi, Henry Ifeanyi UNN, Developers in UNN, Developers in Nsukka, Nigeria, Henify, Student Developer Portfolio, Learning Python, Python tutorials GitHub, Frontend Projects, JavaScript Animation, Django Beginner, Flask Tutorial, GitHub Student Projects, Python lernen, Webentwickler Student, Frontend Projekte, JavaScript Animation, Django Anfänger, Flask Tutorial, Nsukka Tech, Nigeria Developer, Student Programmer UNN"
+  />
+  <meta name="author" content="Henify" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://henry07.vercel.app/" />
+
+  <!-- hreflang for bilingual targeting -->
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://henry07.vercel.app/?lang=en"
+  />
+  <link
+    rel="alternate"
+    hreflang="de"
+    href="https://henry07.vercel.app/?lang=de"
+  />
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://henry07.vercel.app/"
+  />
+
+  <!-- Open Graph (language-neutral wording) -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Henify" />
+  <meta property="og:title" content="Henify — Student Developer Portfolio" />
+  <meta
+    property="og:description"
+    content="Frontend experiments, JavaScript effects, and Python learning projects by a student developer."
+  />
+  <meta property="og:url" content="https://henry07.vercel.app/" />
+  <meta
+    property="og:image"
+    content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
+  />
+  <meta
+    property="og:image:secure_url"
+    content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
+  />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta
+    property="og:image:alt"
+    content="Henify — Student Developer Portfolio"
+  />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Henify — Student Developer Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Student developer portfolio featuring JavaScript, frontend, and Python projects."
+  />
+  <meta
+    name="twitter:image"
+    content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
+  />
+  <meta name="twitter:site" content="@ifyOke0" />
+  <meta name="twitter:creator" content="@ifyOke0" />
+
+  <!-- Robots & discovery -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="robots" href="/robots.txt" />
+  <link rel="author" href="/humans.txt" />
+  <link rel="security" href="/.well-known/security.txt" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Structured Data for Projects -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Henify Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "CSS Intro",
+            "url": "https://github.com/1501henify/CSS_Intro",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Beginner HTML and CSS tutorial project covering HTML5 syntax, VSCode setup and CSS box model."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Snow Animation",
+            "url": "https://github.com/1501henify/Snow-animation",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Beginner JavaScript snow animation effect for webpages."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Observer & Counter",
+            "url": "https://github.com/1501henify/henify-Observer-API",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Intersection Observer API counter animation triggered on scroll."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Learning Python",
+            "url": "https://github.com/ifyOke0/Learning-Python",
+            "programmingLanguage": ["Python"],
+            "description": "Python learning repository covering Django, Flask and beginner backend development."
+          }
+        }
+      ]
+    }
+  </script>
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Indexing -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Multilingual description -->
-    <meta
-      name="description"
-      content="Henify — Student Developer Portfolio featuring frontend projects, JavaScript animations, and Python learning with Django and Flask. | Studenten-Portfolio mit Frontend-Projekten, JavaScript-Animationen und Python-Lernprojekten."
-    />
-
-    <!-- Keywords EN + DE + personal SEO -->
-    <meta
-      name="keywords"
-      content="Henry Ifeanyi, Henry Ifeanyi UNN, Developers in UNN, Developers in Nsukka, Nigeria, Henify, Student Developer Portfolio, Learning Python, Python tutorials GitHub, Frontend Projects, JavaScript Animation, Django Beginner, Flask Tutorial, GitHub Student Projects, Python lernen, Webentwickler Student, Frontend Projekte, JavaScript Animation, Django Anfänger, Flask Tutorial, Nsukka Tech, Nigeria Developer, Student Programmer UNN"
-    />
-    <meta name="author" content="Henify" />
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://henry07.vercel.app/" />
-
-    <!-- hreflang for bilingual targeting -->
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://henry07.vercel.app/?lang=en"
-    />
-    <link
-      rel="alternate"
-      hreflang="de"
-      href="https://henry07.vercel.app/?lang=de"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://henry07.vercel.app/"
-    />
-
-    <!-- Open Graph (language-neutral wording) -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Henify" />
-    <meta property="og:title" content="Henify — Student Developer Portfolio" />
-    <meta
-      property="og:description"
-      content="Frontend experiments, JavaScript effects, and Python learning projects by a student developer."
-    />
-    <meta property="og:url" content="https://henry07.vercel.app/" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Henify — Student Developer Portfolio"
-    />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Henify — Student Developer Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Student developer portfolio featuring JavaScript, frontend, and Python projects."
-    />
-    <meta
-      name="twitter:image"
-      content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
-    />
-    <meta name="twitter:site" content="@ifyOke0" />
-    <meta name="twitter:creator" content="@ifyOke0" />
-
-    <!-- Robots & discovery -->
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <link rel="robots" href="/robots.txt" />
-    <link rel="author" href="/humans.txt" />
-    <link rel="security" href="/.well-known/security.txt" />
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0a0a0a" />
-
     <!-- Responsive redirect logic -->
     <script>
       if (window.innerWidth <= 768) {
@@ -114,61 +169,6 @@
       crossorigin="anonymous"
       defer
     ></script>
-
-    <!-- Structured Data for Projects -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Henify Projects",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "SoftwareSourceCode",
-              "name": "CSS Intro",
-              "url": "https://github.com/1501henify/CSS_Intro",
-              "programmingLanguage": ["HTML", "CSS", "JavaScript"],
-              "description": "Beginner HTML and CSS tutorial project covering HTML5 syntax, VSCode setup and CSS box model."
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "SoftwareSourceCode",
-              "name": "Snow Animation",
-              "url": "https://github.com/1501henify/Snow-animation",
-              "programmingLanguage": ["HTML", "CSS", "JavaScript"],
-              "description": "Beginner JavaScript snow animation effect for webpages."
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "SoftwareSourceCode",
-              "name": "Observer & Counter",
-              "url": "https://github.com/1501henify/henify-Observer-API",
-              "programmingLanguage": ["HTML", "CSS", "JavaScript"],
-              "description": "Intersection Observer API counter animation triggered on scroll."
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "SoftwareSourceCode",
-              "name": "Learning Python",
-              "url": "https://github.com/ifyOke0/Learning-Python",
-              "programmingLanguage": ["Python"],
-              "description": "Python learning repository covering Django, Flask and beginner backend development."
-            }
-          }
-        ]
-      }
-    </script>
   </head>
   <body>
     <aside class="Me home">
@@ -630,10 +630,6 @@
     </aside>
 
     <!-- JavaScript -->
-    <script src="../assets/js/2Translate.js"></script>
-    <script src="../assets/js/desktop.js"></script>
-    <script src="../assets/js/snow.js"></script>
-    <script src="../assets/js/lumos.js"></script>
-    <script src="../assets/js/year.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

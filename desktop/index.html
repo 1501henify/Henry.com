@@ -2,63 +2,153 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>
+      Henify — Student Developer Portfolio | Python & Frontend Projects
+    </title>
+
+    <!-- Multilingual description -->
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 user-scalable=no"
+      name="description"
+      content="Student developer portfolio featuring frontend projects, JavaScript animations, and Python learning with Django and Flask. | Studenten-Portfolio mit Frontend-Projekten, JavaScript-Animationen und Python-Lernprojekten."
     />
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Website ✨" />
+
+    <!-- Keywords EN + DE -->
+    <meta
+      name="keywords"
+      content="Henify, Ifeanyi Henry, student developer portfolio, learning python, python tutorials github, frontend projects, javascript animation, django beginner, flask tutorial, GitHub student projects, Python lernen, Webentwickler Student, Frontend Projekte, JavaScript Animation, Django Anfänger, Flask Tutorial"
+    />
+
+    <meta name="author" content="Henify" />
+    <link rel="canonical" href="https://henry07.vercel.app/" />
+
+    <!-- hreflang for bilingual targeting -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://henry07.vercel.app/?lang=en"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://henry07.vercel.app/?lang=de"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://henry07.vercel.app/"
+    />
+
+    <!-- Robots & discovery -->
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="robots" href="/robots.txt" />
+    <link rel="author" href="/humans.txt" />
+    <link rel="security" href="/.well-known/security.txt" />
+
+    <!-- Open Graph (language-neutral wording) -->
+    <meta property="og:title" content="Henify — Developer Portfolio" />
     <meta
       property="og:description"
-      content="Explore a digital universe — from tech dreams to coding goals and everything in between."
+      content="Frontend experiments, JavaScript effects, and Python learning projects by a student developer."
     />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
     />
-    <meta property="og:url" content="https://universal-henify.vercel.app/" />
+    <meta property="og:url" content="https://henry07.vercel.app/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Henify" />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Website ✨" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Henify — Python & Frontend Projects" />
     <meta
       name="twitter:description"
-      content="Explore a digital universe — from tech dreams to coding goals and everything in between."
+      content="Student developer portfolio with JavaScript, frontend, and Python projects."
     />
     <meta
       name="twitter:image"
       content="https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png"
     />
 
-    <!-- Tittle -->
-    <title>Henify_</title>
+    <!-- Theme -->
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Responsive redirect logic -->
     <script>
       if (window.innerWidth <= 768) {
         window.location.replace("../index.html");
       }
     </script>
 
-    <!-- Style -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/desktop.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="../assets/favicon.ico" />
 
-    <!-- Great Vibes -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
+    <!-- Icons -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
       crossorigin="anonymous"
       defer
     ></script>
+
+    <!-- Structured Data for Projects -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Henify Projects",
+        "itemListElement": [
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 1,
+            "name": "CSS Intro",
+            "url": "https://github.com/1501henify/CSS_Intro",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Beginner HTML and CSS tutorial project covering HTML5 syntax, VSCode setup and CSS box model.",
+            "keywords": "CSS tutorial, HTML beginner project, Brad Traversy course, frontend basics, web design practice"
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 2,
+            "name": "Snow Animation",
+            "url": "https://github.com/1501henify/Snow-animation",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Beginner JavaScript snow animation effect for webpages.",
+            "keywords": "JavaScript animation, snow effect website, beginner JS project, DOM animation tutorial"
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 3,
+            "name": "Observer & Counter",
+            "url": "https://github.com/1501henify/henify-Observer-API",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "description": "Intersection Observer API counter animation triggered on scroll.",
+            "keywords": "Intersection Observer tutorial, counter animation JS, scroll animation project, frontend interaction"
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 4,
+            "name": "Learning Python",
+            "url": "https://github.com/ifyOke0/Learning-Python",
+            "programmingLanguage": ["Python"],
+            "description": "Python learning repository covering Django, Flask and beginner backend development.",
+            "keywords": "learning python, python tutorials github, django beginner, flask tutorial, backend web development, python student project"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <aside class="Me home">

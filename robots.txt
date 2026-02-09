@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://henry07.vercel.app/sitemap.xml
+Host: https://henry07.vercel.app

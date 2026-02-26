@@ -97,10 +97,10 @@
     <meta name="twitter:creator" content="@ifyOke0" />
 
     <!-- Discovery -->
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-    <link rel="robots" href="/robots.txt" />
-    <link rel="author" href="/humans.txt" />
-    <link rel="security" href="/.well-known/security.txt" />
+    <link rel="sitemap" type="application/xml" href="../sitemap.xml" />
+    <link rel="robots" href="../robots.txt" />
+    <link rel="author" href="../humans.txt" />
+    <link rel="security" href="../.well-known/security.txt" />
 
     <!-- Theme -->
     <meta name="theme-color" content="#0a0a0a" />
@@ -326,31 +326,6 @@
           <button class="close-modal">Close</button>
         </div>
       </div>
-
-      <script>
-        const githubBtn = document.querySelector(".github-btn");
-        const modal = document.getElementById("githubModal");
-        const closeBtn = modal.querySelector(".close-modal");
-
-        const openModal = () => {
-          modal.style.display = "flex";
-          document.body.style.overflow = "hidden"; // lock scroll
-        };
-
-        const closeModal = () => {
-          modal.style.display = "none";
-          document.body.style.overflow = "";
-        };
-
-        githubBtn.addEventListener("click", openModal);
-        closeBtn.addEventListener("click", closeModal);
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            closeModal();
-          }
-        });
-      </script>
     </aside>
 
     <aside class="Details">
@@ -661,10 +636,6 @@
     </aside>
 
     <!-- JavaScript -->
-    <script src="../assets/js/2Translate.js"></script>
-    <script src="../assets/js/desktop.js"></script>
-    <script src="../assets/js/snow.js"></script>
-    <script src="../assets/js/lumos.js"></script>
-    <script src="../assets/js/year.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

@@ -24,7 +24,7 @@
     <!-- Keywords -->
     <meta
       name="keywords"
-      content="Henry Ifeanyi, Henify, ifyOke0, ifyOke0 GitHub, ifyOke0 Twitter, UNN Developer, Nsukka Developer, Nigeria Student Developer, Frontend Developer Nigeria, JavaScript Projects, Python Developer UNN, Django Student, Flask Beginner, GitHub Student Projects"
+      content="Henry Ifeanyi, Henify, ifyOke0, Henry Ifeanyi GitHub, Henry (Anyi) GitHub, ifyOke0 GitHub, 1501henify GitHub, ifyOke0 Twitter, 1501henify Twitter, ifyOke0 X, 1501henify X, UNN Student Developer, Nsukka Developer, Nigeria Student Developer, Frontend Developer UNN, Python Developer Nigeria, Django Student, Flask Beginner, JavaScript Projects GitHub"
     />
 
     <meta name="author" content="Henry Ifeanyi" />
@@ -105,24 +105,77 @@
     <!-- Theme -->
     <meta name="theme-color" content="#0a0a0a" />
 
-    <!-- Structured Data: Person Identity -->
+    <!-- Structured Data: Person + Projects -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Henry Ifeanyi",
-        "alternateName": "Henify",
-        "url": "https://henry07.vercel.app/",
-        "image": "https://raw.githubusercontent.com/1501henify/Henry.com/refs/heads/main/assets/img/HenifyO.png",
-        "sameAs": ["https://github.com/ifyOke0", "https://x.com/ifyOke0"],
-        "jobTitle": "Student Developer",
-        "knowsAbout": [
-          "Frontend Development",
-          "JavaScript",
-          "Python",
-          "Django",
-          "Flask",
-          "Web Development"
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Henry Ifeanyi",
+            "alternateName": ["Henify", "ifyOke0", "1501henify"],
+            "url": "https://henry07.vercel.app/",
+            "sameAs": [
+              "https://github.com/ifyOke0",
+              "https://github.com/150henify",
+              "https://x.com/ifyOke0"
+            ],
+            "jobTitle": "Student Developer",
+            "knowsAbout": [
+              "Frontend Development",
+              "JavaScript",
+              "Python",
+              "Django",
+              "Flask",
+              "Web Development"
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Henify Projects",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "CSS Intro",
+                  "url": "https://github.com/1501henify/CSS_Intro",
+                  "programmingLanguage": ["HTML", "CSS", "JavaScript"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Snow Animation",
+                  "url": "https://github.com/1501henify/Snow-animation",
+                  "programmingLanguage": ["HTML", "CSS", "JavaScript"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Observer & Counter",
+                  "url": "https://github.com/1501henify/henify-Observer-API",
+                  "programmingLanguage": ["HTML", "CSS", "JavaScript"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Learning Python",
+                  "url": "https://github.com/ifyOke0/Learning-Python",
+                  "programmingLanguage": ["Python"]
+                }
+              }
+            ]
+          }
         ]
       }
     </script>
